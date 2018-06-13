@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Looker : MonoBehaviour {
 
-    [SerializeField] Transform traget;
+    [SerializeField] Transform target;
 	
 	
 	void Update () {
-        var diff = traget.position - transform.position;
+        var diff = target.position - transform.position;
         diff.y = 0;
         var dir = diff.normalized;
 
